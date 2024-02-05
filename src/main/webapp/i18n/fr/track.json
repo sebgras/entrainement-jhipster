@@ -1,0 +1,25 @@
+{
+  "entrainementJhipsterApp": {
+    "track": {
+      "home": {
+        "title": "Tracks",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Track",
+        "createOrEditLabel": "Créer ou éditer un Track",
+        "notFound": "Aucun Track trouvé"
+      },
+      "created": "Un nouveau Track a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Track avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Track avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Track {{ id }} ?"
+      },
+      "detail": {
+        "title": "Track"
+      },
+      "id": "ID",
+      "name": "Name",
+      "album": "Album"
+    }
+  }
+}

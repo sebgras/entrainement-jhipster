@@ -1,0 +1,18 @@
+{
+  "annotations": {
+    "changelogDate": "20240205140942"
+  },
+  "applications": "*",
+  "entityTableName": "genre",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Genre",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no"
+}

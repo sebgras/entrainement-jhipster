@@ -1,0 +1,25 @@
+{
+  "entrainementJhipsterApp": {
+    "genre": {
+      "home": {
+        "title": "Genres",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Genre",
+        "createOrEditLabel": "Créer ou éditer un Genre",
+        "notFound": "Aucun Genre trouvé"
+      },
+      "created": "Un nouveau Genre a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Genre avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Genre avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Genre {{ id }} ?"
+      },
+      "detail": {
+        "title": "Genre"
+      },
+      "id": "ID",
+      "name": "Name",
+      "album": "Album"
+    }
+  }
+}
