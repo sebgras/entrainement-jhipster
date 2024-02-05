@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (album) {
+      <div>
+        <h2 data-cy="albumDetailsHeading"><span jhiTranslate="entrainementJhipsterApp.album.detail.title">Album</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ album.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="entrainementJhipsterApp.album.name">Name</span></dt>
+          <dd>
+            <span>{{ album.name }}</span>
+          </dd>
+          <dt><span jhiTranslate="entrainementJhipsterApp.album.artist">Artist</span></dt>
+          <dd>
+            @if (album.artist) {
+              <div>
+                <a [routerLink]="['/artist', album.artist.id, 'view']">{{ album.artist.name }}</a>
+              </div>
+            }
+          </dd>
+          <dt><span jhiTranslate="entrainementJhipsterApp.album.genre">Genre</span></dt>
+          <dd>
+            @if (album.genre) {
+              <div>
+                <a [routerLink]="['/genre', album.genre.id, 'view']">{{ album.genre.name }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+        </button>
+
+        <button type="button" [routerLink]="['/album', album.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

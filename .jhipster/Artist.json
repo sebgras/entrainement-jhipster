@@ -1,0 +1,18 @@
+{
+  "annotations": {
+    "changelogDate": "20240205140842"
+  },
+  "applications": "*",
+  "entityTableName": "artist",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Artist",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no"
+}
